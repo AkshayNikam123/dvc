@@ -1,0 +1,6 @@
+[core]
+    remote = xyz
+['remote "xyz"']
+    url = C:\Users\akshay\Desktop\dvc\tmp\dvcstore
+['remote "abc"']
+    url = C:\Users\akshay\Desktop\dvc\tmp\dvcstore
