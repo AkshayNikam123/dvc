@@ -1,0 +1,23 @@
+stages:
+  stage_01:
+    cmd: python stage_01.py #command
+    deps:
+      - stage_01.py  #dependencies #depend on itsef
+    outs:
+      - artifact.txt  #output
+
+
+  stage_02:
+    cmd: python stage_02.py 
+    deps:
+      - artifact.txt # depend on artifact and itself
+      - stage_02.py
+
+  stage_03:
+    cmd: python stage_03.py
+    deps:
+      - artifact.txt
+      - stage_03.py
+
+     #yaml define to exchange data between program
+     # also configuration- specify settings
